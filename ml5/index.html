@@ -38,6 +38,7 @@
       // Make a prediction with the selected image
       // This will return an array with a default of 10 options with their probabilities
       classifier.predict(image, function(err, results) {
+        console.table(results);
         result.innerText = results[0].className;
         probability.innerText = results[0].probability.toFixed(4);
       });
