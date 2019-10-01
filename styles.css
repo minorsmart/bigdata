@@ -1,20 +1,31 @@
+figcaption {
+    color: black;
+}
+
 #title {
-    background-color: #F26419;
-    font-family: 'Audiowide', cursive;
-    font-size: 60px
+    color: #FED11D;
+    background-color: #4A235A;
+    font-family: 'Days One', sans-serif;
+    font-size: 80px
 }
 
 #intro {
-    background-color: #F6AE2D;
+    color: #FFFDE6;
+    background-color: #4A235A;
     font-family: 'Lato', sans-serif;
 }
 
 #example {
-    background-color: #758E4F;
+    color: #FFFDE6;
+    background-color: #4A235A;
     font-family: 'Lato', sans-serif;
 }
 
+#example figcaption {
+    color: #FFFDE6;
+}
+
 #aboutme {
-    background-color: #86BBD8;
+    background-color: #FFC900;
     font-family: 'Lato', sans-serif;
 }
