@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="styles.css">
     </head>
 
-  <body onload="myClassifier()">
+  <body>
     <div class="container-fluid">
       <section id="title" class="text-left font-weight-light p-2">
         <img src="logo-white.png" id="logo">
@@ -130,7 +130,7 @@
                     <div class="card-text">
                       <p>
                         In het kader hiernaast zie je een live voorbeeld.
-                        Tijdens het laden van de pagina in je browser is de foto door een ML-model geanalyseerd en het object geïdentificeerd.
+                        Als je op de knop drukt wordt de foto door een ML-model geanalyseerd en het object geïdentificeerd.
                         Het model is al eerder <a href="http://www.image-net.org/about-stats" target=_blank>elders</a> getraind op basis van meer dan 14 mln foto's.
                         Het model kan 21.000+ verschillende objecten uit 27 categorieën detecteren.
                       </p>
@@ -154,9 +154,13 @@
                     <blockquote class="blockquote">
                     <p class="mb-0">The MobileNet model labeled this as
                       <span class="font-weight-bolder" id="result">...</span> with a confidence of
-                      <span class="font-weight-bolder" id="probability"><mark>...</mark></span>
+                      <span class="font-weight-bolder" id="probability">...</span>
                     </p>
                     </blockquote>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="myClassifier()" id="btn-detect">Detect Objects</button>
+                    </div>
+                    
                   </div>
               </div>
             </div>
@@ -199,21 +203,22 @@
         const result = document.getElementById('result');
         // The probability tag in the HTML
         const probability = document.getElementById('probability');
+        // Change button text
+        const button = document.getElementById('btn-detect');
+        button.innerText = "Wait ...."
 
         // Initialize the Image Classifier method with MobileNet
         const classifier = ml5.imageClassifier('MobileNet', function() {
           console.log('Model Loaded!');
+          
         });
-      //   const classifier = ml5.imageClassifier('DarkNet', function() {
-      //     console.log('Model Loaded!');
-      //   });
-
         // Make a prediction with the selected image
         // This will return an array with a default of 10 options with their probabilities
         classifier.predict(image, function(err, results) {
-          console.table(results);
-          result.innerText = results[0].className;
-          probability.innerText = results[0].probability.toFixed(4);
+        console.table(results);
+        result.innerText = results[0].className;
+        probability.innerText = results[0].probability.toFixed(4);
+        button.innerText = "Detect Objects"
         });
       }
       
