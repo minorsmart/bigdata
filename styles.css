@@ -2,11 +2,32 @@
     padding: 0px;
 }
 
+div .card {
+    color: black;
+}
+
+.checkmark {
+    font-size: 30px
+}
+
+.jumbotron {
+    color: #FFFDE6;
+    background-image: url("jumbo-bg.jpg");
+    background-color: #1b0025;
+    width: 80%
+}
+
 #title{
     color: #FED11D;
     background-color: #110017;
     font-family: 'Days One', sans-serif;
     font-size: 80px
+}
+
+#jumbotron{
+    background-color: #110017;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
 
 #intro {
