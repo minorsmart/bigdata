@@ -64,14 +64,15 @@
         <div class="row">
           <div class="col">
             <p>
+              Ben je een professional (tech of non-tech) die geen of beperkte ervaring heeft met Machine Learning? 
+              Dan is deze Masterclass precies wat je zoekt! 
               Het programma bestaat voor het grootste gedeelte uit ervaren en verkennen.
               Er zullen veel voorbeelden worden aangereikt, die je direct zelf kunt testen.
-              <div class="alert alert-primary display-4 text-center" role="alert">Neem een laptop mee!</div>
             </p>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col">
+          <div class="card-deck">
             <div class="card">
                 <h5 class="card-header">Voor wie?</h5>
                 <div class="card-body">
@@ -87,48 +88,79 @@
                         </tr>
                         <tr>
                             <th scope="row"><span class="checkmark">&#x2610</span></th>
-                            <td><span class=" checkmark align-middle"></span>Experts - have mental models that include exceptions and special cases, which allows allows them to handle situations that are out of the ordinary</td>
+                            <td><span class=" checkmark align-middle"></span>Experts - have mental models that include exceptions and special cases and can handle situations that are out of the ordinary</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <h5 class="card-header">Leerdoelen</h5>
+                <div class="card-body">
+                  <table class="table table-bordered card-text">
+                      <tbody>
+                        <tr>
+                          <th scope="row"><span class="checkmark align-middle">&#x2606</span></th>
+                          <td><span class=" checkmark align-middle"></span>Kent sleutelelementen uit een machine learning workflow</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="checkmark">&#x2606</span></th>
+                            <td><span class=" checkmark align-middle"></span>Kent relaties tussen sleutelelementen uit een machine learning workflow</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="checkmark">&#x2606</span></th>
+                            <td><span class=" checkmark align-middle"></span>Kan in een bestaande workflow de verschillende sleutelelementen herkennen</td>
                         </tr>
                       </tbody>
                     </table>
                 </div>
             </div>
           </div>
-          <div class="col">
+          </div>
+          <div class="row my-5">
+            <div class="col alert alert-primary display-4 text-center" role="alert">
+                  Neem een laptop mee!
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="card-deck">
               <div class="card">
-                  <h5 class="card-header">Leerdoelen</h5>
+                  <h5 class="card-header">Hoe makkelijk is ML eigenlijk?</h5>
                   <div class="card-body">
-                    <table class="table table-bordered card-text">
-                        <tbody>
-                          <tr>
-                            <th scope="row"><span class="checkmark align-middle">&#x2606</span></th>
-                            <td><span class=" checkmark align-middle"></span>Kent sleutelelementen uit een machine learning workflow</td>
-                          </tr>
-                          <tr>
-                              <th scope="row"><span class="checkmark">&#x2606</span></th>
-                              <td><span class=" checkmark align-middle"></span>Kent relaties tussen sleutelelementen uit een machine learning workflow</td>
-                          </tr>
-                          <tr>
-                              <th scope="row"><span class="checkmark">&#x2606</span></th>
-                              <td><span class=" checkmark align-middle"></span>Kan in een bestaande workflow de verschillende sleutelelementen herkennen</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="card-text">
+                      <p>
+                        In het kader hiernaast zie je een live voorbeeld.
+                        Tijdens het laden van de pagina in je browser is de foto door een ML-model geanalyseerd en het object geïdentificeerd.
+                        Het model is al eerder <a href="http://www.image-net.org/about-stats" target=_blank>elders</a> getraind op basis van meer dan 14 mln foto's.
+                        Het model kan 21000+ verschillende objecten uit 27 categorieën detecteren.
+                      </p>
+                      <p>
+                        Het voorbeeld toont aan hoe makkelijk het inmiddels is om ML te integreren in een applicatie. 
+                        Het vergt niet meer dan een browser en een internetverbinding. Omdat het systeem als open source wordt aangeboden en 
+                        er veel documentatie beschikbaar is met tutorials en voorbeelden, kun je snel aan de gang en experimenteren boeken.
+                      </p>
+                      <p>
+                        Tijdens de Masterclass gaan we kijken naar het systeem dat gebruikt is om het model dit model te genereren: een neuraal netwerk.
+                        Je leert de principes van een neuron en hoe die is geprogrammeerd. Daarna gaan we kijken hoe uit meerdere neuronen een slim netwerk 
+                        ontstaat dat vanuit complexe data regels kan genereren (het uiteindelijke model). 
+                      </p> 
+                    </div>
+                  </div>
+              </div>
+              <div class="card mx-5">
+                  <h5 class="card-header">Voorbeeld</h5>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PET_Bottle_Water.jpg" class="card-img-top " id="image" crossorigin="anonymous">
+                  <div class="card-body">
+                    <blockquote class="blockquote">
+                    <p class="mb-0">The MobileNet model labeled this as
+                      <span class="font-weight-bolder" id="result">...</span> with a confidence of
+                      <span class="font-weight-bolder" id="probability"><mark>...</mark></span>
+                    </p>
+                    </blockquote>
                   </div>
               </div>
             </div>
-        </div>
-        <div class="container">
-            <figure class="figure p-3">
-                <img class="rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PET_Bottle_Water.jpg"
-              crossorigin="anonymous" id="image" width="40%">
-              <figcaption class="figure-caption pt-3 text-center">The MobileNet model labeled this as
-                  <span id="result">...</span> with a confidence of
-                  <span id="probability">...</span>
-              </figcaption>
-            </figure>
-        </div>
-        
+          </div>
       </section> 
       <section id="aboutme" class="p-5">
           <h3>Witek ten Hove</h3>
