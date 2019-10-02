@@ -2,38 +2,33 @@
     padding: 0px;
 }
 
-section .container-fluid .embed-responsive {
-    background-color: #4A235A;
-}
-
-figcaption {
-    color: black;
-}
-
-#title {
+#title{
     color: #FED11D;
-    background-color: #4A235A;
+    background-color: #110017;
     font-family: 'Days One', sans-serif;
     font-size: 80px
 }
 
 #intro {
     color: #FFFDE6;
-    background-color: #4A235A;
+    background-color: #110017;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
 
-#example {
+#details {
     color: #FFFDE6;
-    background-color: #4A235A;
+    background-color: #110017;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
 
-#example figcaption {
+#details figcaption {
     color: #FFFDE6;
 }
 
 #aboutme {
     background-color: #FFC900;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
